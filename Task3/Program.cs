@@ -6,9 +6,9 @@
 1 -> нет*/
 
 Console.Write("Введите цифру обозначающую день недели: ");
-int num = int.Parse(Console.ReadLine());
-string day;
-if (num == 6 | num == 7)
+int num = int.Parse(Console.ReadLine());                    //Вводим цифру
+string day;                                                 // Вводим переменную которая будет хранит строку со словом "да" или "нет"
+if (num == 6 | num == 7)                                    // Проверяем какую цифру ввели
 {
     day = "да";
 }
@@ -17,4 +17,4 @@ else
     day = "нет";
 }
 
-Console.Write(num + " -> " + day);
+Console.Write(num + " -> " + day);                          // Выводим результат
